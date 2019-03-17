@@ -21,7 +21,7 @@ class CashRegister
       self.item_list << title
     self.last_transaction = []
     transaction_price = price * quantity
-    last_transaction << transaction_price
+    self.last_transaction << transaction_price
     end
   end
   
