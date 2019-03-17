@@ -12,13 +12,16 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    last_transaction = []
-    transaction_price = price * quantity
-    last_transaction << transaction_price
+    #last_transaction = []
+    #transaction_price = price * quantity
+    #last_transaction << transaction_price
     #binding.pry
     self.total += price * quantity
     quantity.times do 
       self.item_list << title
+    last_transaction = []
+    transaction_price = price * quantity
+    last_transaction << transaction_price
     end
   end
   
