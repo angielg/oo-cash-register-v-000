@@ -18,8 +18,6 @@ class CashRegister
     quantity.times do 
       self.item_list << title
     end
-    #self.last_transaction = self
-    #last_transaction = [], and everytime add_item is called it replaces whatever is in array
   end
   
   def apply_discount
